@@ -25,3 +25,9 @@ git push origin xxx  把xxx的分支提交到项目
 ## 分支操作
 
 git merge  xxx    合并分支
+
+
+
+####  将本地项目上传到github的空仓库
+
+本地初始化  git init      ;  git  add .   ;    git commit -m   ;    git remote add origin https://github.com/guyibang/TEST2.git  ;     git push -u origin master
