@@ -1,0 +1,5 @@
+在js文件中写HTML标签，标签会破碎，解决方法：
+设置 - 搜索editor ,添加
+"editor.formatOnType": false,
+"editor.formatOnSave": false
+再禁用以下的插件 js-CSS-HTML Formatter

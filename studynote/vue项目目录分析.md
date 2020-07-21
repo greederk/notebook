@@ -1,0 +1,1 @@
+assets:img   把小图片压缩成base64,把大图片放到public文件下

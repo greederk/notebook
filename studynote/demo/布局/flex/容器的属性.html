@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>容器属性</title>
+    <style>
+        .flex-box{
+            display:flex;
+            width: 100%;
+            height: 600px;
+            background-color: #ccc;
+            /* flex-direction:row; */
+            /* flex-direction:row-reverse; */
+            flex-direction:row;
+            /* justify-content:flex-end; */
+            justify-content:space-around;
+            /* align-items: center; */
+            align-items: stretch;
+            /* align-items: baseline; */
+        }
+        span{
+            background-color: #f1f2f5;
+        }
+        .items1{
+            order:6
+        }
+        .items2{
+            order:3
+        }
+        .items3{
+            order:1;
+            flex-grow:1;
+            background-color: orange;
+        }
+        .items4{
+            order:2;
+            flex-grow:3;
+            flex-basis:50px;
+            background-color: green;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class='flex-box'>
+        <span class="items1">子项A</span>
+        <span class="items2">子项B</span>
+        <span class="items3">子项C</span>
+        <span class="items4">子项D</span>
+    </div>
+
+<div>
+    <p>
+        父元素的属性：
+        flex-direction: row row-reverse column column-reverse
+        flex-wrap: nowrap wrap 
+        justify-content:flex-start flex-end center space-between space-around
+        align-items: flex-start flex-end center baseline stretch
+
+    </p>
+    <p>
+        子项目的属性：
+        order : number | 0
+        flex-grow: number | 0 
+
+    </p>
+</div>
+</body>
+</html>
