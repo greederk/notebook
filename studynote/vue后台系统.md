@@ -15,3 +15,43 @@
 ​		}
 
 ​	})
+
+
+
+
+
+#### 按需加载  element-ui
+
+安装主体 npm i element-ui -S
+
+插件 npm install babel-plugin-component -D
+
+babel.config.js  修改为：
+
+module.exports = {
+
+  presets: [
+
+​    '@vue/cli-plugin-babel/preset'
+
+  ],
+
+  "plugins": [
+
+​    [
+
+​      "component",
+
+​      {
+
+​        "libraryName": "element-ui",
+
+​        "styleLibraryName": "theme-chalk"
+
+​      }
+
+​    ]
+
+  ]
+
+}

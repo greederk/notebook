@@ -30,4 +30,10 @@ git merge  xxx    合并分支
 
 ####  将本地项目上传到github的空仓库
 
-本地初始化  git init      ;  git  add .   ;    git commit -m   ;    git remote add origin https://github.com/guyibang/TEST2.git  ;     git push -u origin master
+```
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:greederk/tdtxproject.git
+git push -u origin master
+```
